@@ -8,7 +8,7 @@ whichDigit = int(input("What should I find: "))
 allNumbers = ""
 digitCount = 0
 
-for i in range(typeTo):
+for i in range(typeTo - typeFrom + 1):
     allNumbers = allNumbers + str(typeFrom + i)
 
 allNumbersList = []
@@ -22,3 +22,4 @@ for n in range(len(allNumbersList)):
 
 print()
 print("I found " + str(digitCount) + " " + str(whichDigit) + "'s")
+input()
