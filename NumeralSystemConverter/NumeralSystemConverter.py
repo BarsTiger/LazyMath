@@ -21,17 +21,12 @@ hextonum = {
     "F": 15
 }
 
-
-
 systypefrom = int(input("Type base number of system convert FROM: "))
 systypeto = int(input("Type base number of system convert TO: "))
-convertfrom = input("Type number, that you want to convert: ")
 if systypefrom > 16 or systypeto > 16:
     print("Sorry, more than hexal systems aren't supported RIGHT NOW. Come back in several centuries")
     input()
     exit()
-
-convertfrom = convertfrom.upper()
 
 def todecimal(number, base):
     n = len(str(number))
@@ -43,6 +38,7 @@ def todecimal(number, base):
 
     return res
 
-print(todecimal(convertfrom, systypefrom))
-
-input()
+while True:
+    inputnumber = input("Type number, that you want to convert: ")
+    inputnumber = inputnumber.upper()
+    print(todecimal(inputnumber, systypefrom))
