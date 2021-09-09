@@ -1,4 +1,4 @@
-#NumeralSystemConverter
+# NumeralSystemConverter
 From arbitrary to arbitrary numeral system converter \
 For exapmple: convert 10001001 from binary to decimal \
 Use: \
